@@ -1,0 +1,47 @@
+X
+
+    A B C D E F
+
+        %home-page
+            ~ home
+            ~ { en ~ fr ~ de }
+            ~ lorem
+              ipsum
+            ~ { a
+                ¨fr:a
+                    aa
+                    aaa
+                ¨de:a
+                    aa
+                    aaa
+                ~ b
+                  ¨fr:b
+                  ¨de:b
+                ~ c }
+            ~ lorem
+              ipsum
+            ~ { a
+                ~ b
+                ~ c
+                  cc
+                  ccc
+                  ¨fr:b
+                      bb
+                      bbb
+                  ¨de:b }
+
+        %contact-page
+            ~ contact
+            ~ { en ~ fr ~ de }
+            ~ lorem
+              ipsum
+            ~ {
+                a
+                ~ b
+                ~ c
+              }
+            ~ lorem
+              ipsum
+            ~ { a
+                ~ b
+                ~ c }
