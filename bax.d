@@ -249,14 +249,14 @@ void ProcessFile(
         space_count = line.GetIndentationSpaceCount();
         trimmed_line = line.strip();
 
-        if ( trimmed_line.startsWith( '¨' ) )
-        {
-            context.UmlautSpaceCount = 0;
-        }
-
         if ( trimmed_line.startsWith( '~' ) )
         {
             context.TildeSpaceCount = 0;
+            context.UmlautSpaceCount = 0;
+        }
+
+        if ( trimmed_line.startsWith( '¨' ) )
+        {
             context.UmlautSpaceCount = 0;
         }
 
@@ -284,14 +284,15 @@ void ProcessFile(
                   ~ trimmed_line;
         }
 
-        if ( trimmed_line.startsWith( '¨' ) )
-        {
-            context.UmlautSpaceCount = 4;
-        }
-
         if ( trimmed_line.startsWith( '~' ) )
         {
             context.TildeSpaceCount = 2;
+        }
+
+        if ( trimmed_line.startsWith( '¨' )
+             || trimmed_line.startsWith( "~ ¨" ) )
+        {
+            context.UmlautSpaceCount = 4;
         }
 
         for ( character_index = 0;

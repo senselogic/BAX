@@ -33,16 +33,24 @@ X
         %contact-page
             ~ contact
             ~ { en ~ fr ~ de }
-            ~ lorem
+            ~ ¨fr:lorem
                 ipsum
                 ~ {
                 a
                  ~ b
                ~ c
                }
-            ~ lorem
+             ~ lorem
                 ipsum
-                ~ { a
-                ~ b
-                 ~ c }
+                ~ { 
+                a
+               ~ b
+                ~ c
+                cc
+                ccc
+              ¨fr:b
+              bb
+              bbb
+              ¨de:b 
+                 }
 
